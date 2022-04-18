@@ -1,0 +1,20 @@
+const push = function () {
+    console.log("pushing it!")
+    }
+  
+const pull = function () {
+    console.log("pulling it!")
+    }
+  
+const pushPull = function (func){
+    return func()
+}
+pushPull(push) //should print "pushing it!"
+pushPull(pull) //should print "pulling it!"
+
+const run = (name) => {console.log("Run, " + name + ", run!")}
+const yell = function(action){
+    let env = "Forest"
+    action(env)
+}
+run(yell)
