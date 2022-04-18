@@ -1,0 +1,41 @@
+#parent{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    position: absolute;
+}
+#child1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    right: 0px;
+}
+#child2{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+#child3{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+}
+#child4{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    bottom: 0;
+}
+#child5{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+}

@@ -1,0 +1,14 @@
+#parent{
+    height: 70px;
+    width: 40%;
+    background-color: rgb(216, 110, 128);
+    border: solid 2px red;
+    position: relative;
+    display: flex;
+}
+#child {
+    height: calc(100% - 4px);
+    width: calc(calc(100% / 3) - 4px);
+    position: relative;
+    border: solid 2px black;
+}

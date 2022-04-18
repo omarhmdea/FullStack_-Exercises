@@ -1,0 +1,64 @@
+#parent{
+    height: 150px;
+    width: 300px;
+    background-color: mediumpurple;
+    position: relative;
+    border-radius: 5px;
+
+}
+#text1 {
+    color: black;
+    left: 10px;
+    position: absolute;
+    font-family: sans-serif;
+}
+
+#text2 {
+    color: black;
+    right: 10px;
+    bottom: 0;
+    position: absolute;
+    font-family: sans-serif;
+}
+
+.bar{
+    height: 10px;
+    width: 20px;
+    background-color: darkgrey;
+}
+#b1{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    padding-bottom: 10px;
+}
+#b2{
+    position: absolute;
+    bottom: 5px;
+    left: 50px;
+    padding-bottom: 70px;
+}
+#b3{
+    position: absolute;
+    bottom: 5px;
+    left: 90px;
+    padding-bottom: 100px;
+}
+#b4{
+    position: absolute;
+    bottom: 5px;
+    left: 130px;
+    padding-bottom: 90px;
+}
+#b5{
+    position: absolute;
+    bottom: 5px;
+    left: 170px;
+    padding-bottom: 70px;
+}
+#b6{
+    position: absolute;
+    bottom: 5px;
+    left: 210px;
+    padding-bottom: 40px;
+}

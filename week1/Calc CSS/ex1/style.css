@@ -1,0 +1,19 @@
+#parent{
+    height: 70px;
+    width: 500px;
+}
+#child1 {
+    height: 70px;
+    width: calc(100% - 20px);
+    background-color: rgb(240, 133, 186);
+    float: left;
+
+}
+
+#child2 {
+    height: 70px;
+    width: 20px;
+    background-color: rgb(197, 95, 95);
+    float: left;
+
+}

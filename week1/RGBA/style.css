@@ -1,0 +1,13 @@
+#parent {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+}
+#first-txt {
+    position: absolute;
+    background-color: rgb(138, 43, 226,0.5);
+    height: 40px;
+    width: 300px;
+    top: 17px;
+    left: 20px;
+}

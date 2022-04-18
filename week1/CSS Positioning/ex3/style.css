@@ -1,0 +1,28 @@
+#parent{
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#top-el{
+    height: 50px;
+    width: 60px;
+    background-color: grey;
+    position: absolute;
+    padding-right: 240px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#White-m{
+    width: 180px;
+    height: 150px;
+    left: 60px;
+    background-color: white;
+    position: absolute;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

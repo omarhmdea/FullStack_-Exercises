@@ -1,0 +1,71 @@
+#parent{
+    width: 424px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+}
+#sq1{
+    height: 93px;
+    width: 100px;
+    top: 3px;
+    left: 3px;
+    background-color: #66320E;
+    position: absolute;
+}
+#sq2{
+    height: 93px;
+    width: 100px;
+    bottom: 3px;
+    left: 3px;
+    background-color: #66320E;
+    position: absolute;
+}
+#sq3{
+    height: 93px;
+    width: 100px;
+    bottom: 3px;
+    left: 109px;
+    background-color: #66320E;
+    position: absolute;
+}
+#sq4{
+    height: 93px;
+    width: 100px;
+    top: 3px;
+    left: 109px;
+    background-color: #66320E;
+    position: absolute;
+}
+#sq5{
+    height: 93px;
+    width: 100px;
+    bottom: 3px;
+    left: 215px;
+    background-color: #66320E;
+    position: absolute;
+}
+#sq6{
+    height: 93px;
+    width: 100px;
+    top: 3px;
+    left: 215px;
+    background-color: #66320E;
+    position: absolute;
+}
+#sq7{
+    height: 93px;
+    width: 100px;
+    top: 3px;
+    left: 321px;
+    background-color: #66320E;
+    position: absolute;
+}
+#red-line{
+    height: 2px;
+    width: 419px;
+    top: 99px;
+    left: 3px;
+    background-color: darkred;
+    position: absolute;
+
+}
