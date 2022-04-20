@@ -1,10 +1,5 @@
-const determineWeather = temp => {
-    if(temp > 25){
-      return "hot"
-    }
-    return "cold"
-}
-
+const determineWeather = temp => temp > 25 ? "hot" : "cold"
+    
 const commentOnWeather = temp => `It's ${determineWeather(temp)}`
 
 console.log(commentOnWeather(30)); //returns "It's hot"

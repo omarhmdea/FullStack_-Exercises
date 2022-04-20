@@ -1,6 +1,6 @@
 const explode = (lightFunc, soundFunc, sound) => {
   lightFunc()
-  //soundFunc(sound)
+  soundFunc(sound)
 }
     
 const shineLight = () => document.getElementById("box").style.backgroundColor = "yellow"

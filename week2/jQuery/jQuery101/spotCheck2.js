@@ -1,0 +1,5 @@
+$('h1').css('color','blue')
+$('.red-div').css('color','red')
+$('#first').css('color','green')
+$('#sec').css('color','pink')
+$('#brown-div').css('color','brown')

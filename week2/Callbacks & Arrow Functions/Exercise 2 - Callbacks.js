@@ -1,9 +1,9 @@
-const returnTime = function (time) {
+const printTime = function (time) {
     console.log('The current time is: ' + time)
 }
 
-const getTime = function (returnTime){
+const getTime = function (printTime){
     const time = new Date()
-    return returnTime(time)
+    return printTime(time)
 }  
-getTime(returnTime)
+getTime(printTime)
