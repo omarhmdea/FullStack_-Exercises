@@ -1,6 +1,6 @@
 const Tweeter = function() {
 
-    const posts = [
+    const _posts = [
         {
             text: "First post!",
             id: "p1",
@@ -19,20 +19,18 @@ const Tweeter = function() {
                 { id: "c6", text: "Haha second place what a joke." }
             ]
         }
+        
     ]
 
     let postIdCounter = 3
     let commentIdCounter = 7
 
-    const getPosts = () => {
-        for (const post of posts) {
-            console.log(post);
-        }
-    }
+    const getPosts = () => _posts
+    
 
     const getPostIndex = postId => {
-        for (const index in posts) 
-            if( posts[index].id === postId )
+        for (const index in _posts) 
+            if( _posts[index].id === postId )
                 return index
     }
 
@@ -42,13 +40,13 @@ const Tweeter = function() {
         post['id'] = `p${postIdCounter++}`
         post['comments'] = []
 
-        posts.push(post)
+        _posts.push(post)
     }
 
     const removePost = postID => { 
         const index = getPostIndex(postID)
         if(index)
-            posts.splice((index),1)
+            _posts.splice((index),1)
         else
             console.log("There is no post with id " + postID); 
     }
@@ -60,15 +58,15 @@ const Tweeter = function() {
 
         const index = getPostIndex(postID)
         if(index)
-            posts[index].comments.push(comment)
+            _posts[index].comments.push(comment)
         else
             console.log("There is no post with id " + postID);
     }
 
     const removeCommentById = (index,commentID) => {
-        for (const comment in posts[index].comments) 
-            if( posts[index].comments[comment].id === commentID )
-                posts[index].comments.splice(comment,1)
+        for (const comment in _posts[index].comments) 
+            if( _posts[index].comments[comment].id === commentID )
+                _posts[index].comments.splice(comment,1)
     }
 
     const removeComment = (postID, commentID) => {
@@ -88,19 +86,3 @@ const Tweeter = function() {
 }
 
 
-
-const tweeter = Tweeter()
-
-//tweeter.addPost("This is my own post!")
-//console.log(tweeter.getPosts())
-
-// tweeter.removePost("p7")
-// console.log(tweeter.getPosts())
-
-// tweeter.addComment("Damn straight it is!", "p3")
-// tweeter.addComment("Second the best!", "p2")
-// console.log(tweeter.getPosts())
-
-
-// tweeter.removeComment("p2", "c6")
-// console.log(tweeter.getPosts())
