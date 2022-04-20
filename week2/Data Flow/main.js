@@ -13,11 +13,12 @@ const posts = [
   }
 ]
 
-let count = 0
+
 const render = function () {
   $( "#timeline" ).empty();
+  let count = 0
   for (let post of posts) {
-      let postBox = $(`<div> <b> ${post.name} </b> : ${post.text} </div>`)
+      let postBox = $(`<div class="postClass" id="post-${count++}"> <b> ${post.name} </b> : ${post.text} </div>`)
       $("#timeline").append(postBox)
   }
 }
@@ -31,8 +32,9 @@ $("#post").on("click", function () {
   render()
 })
 
-$("#timeline div").on("click", function() {
-  console.log($("#timeline div").index(this));
+$("div").on("click",'.postClass', function() {
+  const postId = $(this).attr('id').split('-')[1]
+  posts.splice(postId,1)
   render()
 });
 
