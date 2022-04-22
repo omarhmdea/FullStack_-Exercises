@@ -1,0 +1,42 @@
+#container {
+    height: 500px;
+    width: 500px;
+    border: solid black 3px;
+    display: flex;
+    flex-direction: column;
+}
+.sub-container {
+    display: flex;
+    flex-grow: 3;
+
+}
+.header {
+    background-color: aqua;
+    border: solid black 3px;
+    flex-grow: 1;
+
+}
+.menu {
+    background-color:palevioletred;
+    border: solid black 3px;
+    flex-grow: 1;
+
+}
+.content {
+    background-color: blanchedalmond;
+    border: solid black 3px;
+    flex-grow: 3;
+
+}
+.ad {
+    background-color: palevioletred;
+    border: solid black 3px;
+    flex-grow: 1;
+
+}
+.footer {
+    background-color: aqua;
+    border: solid black 3px;
+    flex-grow: 1;
+
+}

@@ -30,8 +30,8 @@ const getSummary = function(person){
     summary += capitalize(person.name)
     summary += ` is ${getAge(person.age)} ` //Yes - you can put a function call inside the tick quotes!
     summary += professionProcess(person.profession)
-    // summary += //call function for country + city
-    // summary += //call function for catchphrasereturn summary
+    summary += AddCountryAndCity(person.country,person.city)
+    summary += catchphrasereturn(person.name,person.catchphrase)
     console.log(summary);
 }
 
@@ -45,12 +45,10 @@ const capitalize = function(str){
 
 function getAge(age) {
   if (age < 21)
-  {
     return 'an underage'
-  }
-  else {
+  if (age >= 55)
     return `${age}+`
-  }
+  return `${age} Years old`
 }
 
 function professionProcess(text) {
@@ -61,5 +59,16 @@ function professionProcess(text) {
   return newText
 }
 
-getSummary(people_info[0])
+function AddCountryAndCity(country,city) {
+  return `from ${capitalize(city)}, ${capitalize(country)}.`
+}
+
+function catchphrasereturn(name,catchphrase) {
+  return ` ${capitalize(name)} loves to say "${catchphrase}".`
+}
+
+for (const person of people_info) {
+  getSummary(person)
+}
+
   
