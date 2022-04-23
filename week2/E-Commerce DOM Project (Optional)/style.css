@@ -1,0 +1,94 @@
+body{
+    background-color: #ecf0f1;
+    font-family: 'Balthazar', serif;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.box {
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+}
+#content-container {
+    align-content: center;
+    display: flex;
+}
+.product-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.about {
+    flex-grow: 1;
+    text-align: center;
+}
+.products {
+    flex-grow: 1;
+    text-align: center;
+
+}
+.cart {
+    flex-grow: 1;
+    text-align: center;
+
+}
+.picker{
+    padding: 10px;
+    margin: 10px;
+    width: 120px;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif; /*You'll have to import this from Google Fonts*/box-shadow: 1px 1px 3px black;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+  }
+.product {
+    display: flex;
+    flex-direction: column;
+}
+.proudct-name {
+    align-self: center;
+    margin: 5px;
+}
+.proudct-price {
+    align-self: center;
+    margin: 5px;
+}
+.addToBag {
+    align-self: center;
+}
+.removeFromBag {
+    align-self: center;
+
+}
+.pickerRemove {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif; /*You'll have to import this from Google Fonts*/box-shadow: 1px 1px 3px black;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(207, 90, 90);
+}
+.pickerTotal {
+    padding: 10px;
+    margin: 100px;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif; /*You'll have to import this from Google Fonts*/box-shadow: 1px 1px 3px black;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(21, 231, 32);
+    align-self: flex-start;
+    order: 1;
+
+}
