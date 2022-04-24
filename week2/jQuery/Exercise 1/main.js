@@ -1,13 +1,16 @@
+const nameList = $("ul")
+const nameInput = $("#input")
+
 const addRow = function(text) {
-    $("ul").append(`<li>${text}</li>`);
+  nameList.append(`<li>${text}</li>`);
   };
 
 
 $("#add").on("click", function() {
-  addRow($("#input").val());
+  addRow(nameInput.val());
 });
 
 $("#remove").on("click", function() {
-  $("ul").find("li:last").remove();
+  nameList.find("li:last").remove();
 });
 

@@ -1,5 +1,7 @@
+const cart = $('#cart')
 
 $(".item").click(function(){
   if($(this).data().instock)
-    $('#cart').append(`<div class=cart-item>${$(this).text()}</div>`)
+  cart.append(`<div class=cart-item>${$(this).text()}</div>`)
 })
+

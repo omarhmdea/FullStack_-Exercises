@@ -6,6 +6,6 @@ for (const color of colors) {
   $(color).css("background-color",`${$(color).text().toLowerCase()}`)
 }
 
-colors.click(function(){
+$('#colors').on('click','span',(function(){
   $(".box").css("background-color",`${$(this).css("background-color")}`)
-})
+}))

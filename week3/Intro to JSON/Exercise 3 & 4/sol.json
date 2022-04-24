@@ -1,0 +1,38 @@
+{
+  "name": "Gray Wolf",
+  "weigh": {
+      "kilograms": 60,
+      "tons": 0.06
+  },
+  "locality": "Russia",
+  "endangered": true,
+  "food": [
+    {
+      "food type": "deer",
+      "percentage": 70
+    },
+    {
+      "food type": "mountain goats",
+      "percentage": 10
+    },
+    {
+      "food type": "moose",
+      "percentage": 2
+    },
+    {
+      "food type": "elk",
+      "percentage": 10
+    },
+    {
+      "food type": "bison",
+      "percentage": 1
+    },
+    {
+      "food type": "fish",
+      "percentage": 2
+    }
+  ],
+  "eaten by": [],
+  "delicious scale": 3
+
+}
