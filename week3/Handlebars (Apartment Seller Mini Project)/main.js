@@ -1,3 +1,5 @@
+const apartments_template = $('#apartments-template')
+const resultsContainer = $("#results")
 
 $("button").on("click", function () {
     let address = $("#addr-input").val()
@@ -12,9 +14,15 @@ $("button").on("click", function () {
 })
 
 const renderApts = function (apartments) {
-    $("#results").empty()
-    console.log(apartments) //array of apartments to render
-    //Your code goes here.
+    resultsContainer.empty()
+
+    const source = apartments_template.html()
+    const template = Handlebars.compile(source);
+    const newHTML = template({apartments:apartments})
+    console.log(newHTML);
+
+    resultsContainer.append(newHTML)
+    
 }
 
 renderApts(apartments) //renders apartments when page loads

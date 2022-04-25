@@ -1,2 +1,0 @@
-# apartment-seller
-Handlebars Project
