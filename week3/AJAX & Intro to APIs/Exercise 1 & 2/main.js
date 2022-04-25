@@ -11,3 +11,8 @@ const fetch = function (queryType, queryValue){
 
 fetch("isbn", 9789814561778)
 fetch("title", "How to Win Friends and Influence People")
+
+let data = $.get('/someAPIurl', function(result){
+    return result
+})
+console.log(data)
