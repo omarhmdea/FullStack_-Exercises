@@ -25,7 +25,7 @@ class Queue {
             return null
         }
         this.length--
-        return this.queue.splice(this.length,1)
+        return this.queue.pop()
     }
 }
 

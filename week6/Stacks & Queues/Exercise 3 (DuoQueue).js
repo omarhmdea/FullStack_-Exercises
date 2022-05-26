@@ -33,22 +33,20 @@ class Queue {
 class DuoQueue {
 
     constructor() {
-        this.q_1 = new Queue()
-        this.q_2 = new Queue()
+        this.q1 = new Queue()
+        this.q2 = new Queue()
     }
     enqueue(person, qNum) {
-        const qName = 'q_' + qNum
-        this[qName].enqueue(person)
+        this[this.getNameQ(qNum)].enqueue(person)
     }
     dequeue(qNum) {
-        const qName = 'q_' + qNum
-        this[qName].dequeue(qName)
+        this[this.getNameQ(qNum)].dequeue(this.getNameQ(qNum))
     }
     getLongestQueue() {
-        return this.q_1.length > this.q_2.length ? this.q_1 : this.q_2
+        return this.q1.length > this.q2.length ? this.q1 : this.q2
     }
     getShortestQueue() {
-        return this.q_1.length < this.q_2.length ? this.q_1 : this.q_2
+        return this.q1.length < this.q2.length ? this.q1 : this.q2
     }
     balanceQueues() {
 
@@ -61,6 +59,9 @@ class DuoQueue {
             shortestQ.enqueue(item)
             diff = longestQ.length - shortestQ.length
         }
+    }
+    getNameQ(qNum){
+        return `q${qNum}`
     }
 
 }

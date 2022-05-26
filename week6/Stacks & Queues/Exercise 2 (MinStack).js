@@ -40,6 +40,7 @@ class MinStack {
 
         return delete this.stack[this.length]
     }
+    
     getMin() {
         return this.isEmpty() ? null : this.minTemp[this.length - 1]
     }
