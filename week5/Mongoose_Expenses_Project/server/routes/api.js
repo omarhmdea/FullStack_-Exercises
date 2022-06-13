@@ -40,7 +40,7 @@ router.post('/expenses', function (req, res) {
     
 })
 
-router.put('/update', function (req, res) {
+router.put('/expenses', function (req, res) {
 console.log("in put");
     const filter = { group: req.body.group1 };
     const update = { group: req.body.group2 };
